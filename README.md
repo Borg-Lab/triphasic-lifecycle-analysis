@@ -1,4 +1,4 @@
-# Triphasic Lifecycle Analysis Manuscript Code
+# Manuscript Code: Regulatory evolution and architecture of the triphasic life cycle in the red seaweed *Bostrychia moritziana*  
 
 This repository contains the code used for transcriptomic analysis across the triphasic life history of the model red alga Bostrychia moritziana, as published here: paper ref
 
@@ -38,21 +38,14 @@ The current `config/paths.yml` uses repository-relative placeholder paths for up
 
 ## Upstream Processing and Dependencies
 
-This manuscript analysis begins after raw RNA-seq processing with `nf-core/rnaseq` STAR/Salmon outputs. The upstream run recorded `nf-core/rnaseq` 3.12.0 and Nextflow 23.10.0; include the corresponding `pipeline_info/software_versions.yml` with the upstream RNA-seq inputs when archiving the full input bundle.
+This manuscript analysis uses raw STAR/Salmon outputs from the RNA-seq processing pipeline `nf-core/rnaseq` 3.12.0 and Nextflow 23.10.0.
 
 Runtime dependencies, R/Bioconductor package requirements, ASE shell-tool requirements, and the exact upstream input paths are documented in `docs/dependencies_and_provenance.md`.
-
 
 ## Reproducibility Status
 
 The repository contains the retained manuscript code, figure/table wrappers, and final copied manuscript outputs. A full source rerun with `scripts/run_manuscript_pipeline.sh` requires the upstream input bundle at the paths configured in `config/paths.yml` and `config/ase.yml`, plus the R/Bioconductor and ASE command-line dependencies listed in `docs/dependencies_and_provenance.md`.
 
-With code alone, the syntax checks pass, but the pipeline will stop at input/dependency validation until those data files and packages are available.
-
 ## Manuscript Output Mapping
 
 See `metadata/manuscript_output_manifest.tsv` for the complete mapping from manuscript panel/table to final output file and generating script.
-
-## Scope
-
-This repository intentionally excludes exploratory branches and provenance-only code that did not contribute to the manuscript figures/tables, including the Smart-seq3 UMI branch and the optional XLSX workbook exporter. Supplementary Table 3 is represented by the individual functional-enrichment TSV files.

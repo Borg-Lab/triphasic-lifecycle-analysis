@@ -1,0 +1,28 @@
+min_rowmax_counts: 10
+tpm_detect_threshold: 1
+marker_tau_threshold: 0.7
+marker_min_log2fc: 1
+marker_max_fdr: 0.05
+marker_de_mode: "relevant"
+marker_mode: "strict"
+marker_strict_tpm_floor: 1
+marker_strict_min_max_tpm: 5
+marker_strict_max_detected_stages: 4
+wgcna_enable: true
+wgcna_power: 12
+wgcna_min_module_size: 30
+wgcna_merge_cut_height: 0.2
+wgcna_deep_split: 2
+wgcna_target_module_min: 12
+wgcna_target_module_max: 30
+chrom_cluster_enable: true
+chrom_perm_n: 1000
+chrom_seed: 42
+chrom_distance_metric: "nearest_midpoint"
+chrom_min_set_size: 5
+chrom_block_gap_bp: 50000
+chrom_block_min_genes: 2
+alpha: 0.05
+exclude_chromosomes:
+  - "ChrPt"
+  - "ChrMt"

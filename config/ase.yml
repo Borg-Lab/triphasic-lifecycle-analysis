@@ -1,0 +1,4 @@
+joint_vcf: "data/upstream_sarek/joint_germline.vcf.gz"
+m_sample: "P1_Bm3235M_thl"
+f_sample: "P1_Bm3235F_thl"
+samples_tsv: "config/ase_samples.tsv"

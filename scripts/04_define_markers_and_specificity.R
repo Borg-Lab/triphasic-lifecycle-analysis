@@ -1,0 +1,17 @@
+#!/usr/bin/env Rscript
+source("R/io.R")
+source("R/qc.R")
+source("R/de.R")
+source("R/specificity_markers.R")
+
+paths <- read_paths_config(Sys.getenv("PATHS_CONFIG", unset = "config/paths.yml"))
+analysis <- read_analysis_config(Sys.getenv("ANALYSIS_CONFIG", unset = "config/analysis.yml"))
+design <- read_design_table(Sys.getenv("DESIGN_CONFIG", unset = "config/design.tsv"))
+contrasts <- read_contrast_table(Sys.getenv("CONTRASTS_CONFIG", unset = "config/contrasts.tsv"))
+expr <- prepare_expression_inputs(paths, design, analysis)
+means <- compute_group_tpm_means(expr$tpm, design, group_col = "stage")
+de <- run_differential_expression(expr$counts, design, contrasts)
+func_anno <- read_functional_annotation(paths)
+markers <- build_marker_table_mode(means, de, analysis, func_anno_df = func_anno, contrast_df = contrasts)
+write_tsv(markers, file.path(paths$output_root, "markers", "marker_table.tsv"))
+cat("Marker/specificity step completed.\n")

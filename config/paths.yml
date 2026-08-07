@@ -1,0 +1,7 @@
+counts_tsv: "data/upstream_rnaseq/star_salmon/salmon.merged.gene_counts.tsv"
+tpm_tsv: "data/upstream_rnaseq/star_salmon/salmon.merged.gene_tpm.tsv"
+annotation_tsv: "data/annotation/functional_annotation.tsv"
+gff_gtf: "data/annotation/genes.gff"
+gene_age_tsv: "data/annotation/gene_ages.tsv"
+orthogroup_tsv: ""
+output_root: "runs/triphasic_manuscript/results"

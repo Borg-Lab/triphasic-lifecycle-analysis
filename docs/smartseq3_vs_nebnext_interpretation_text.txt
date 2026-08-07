@@ -1,0 +1,18 @@
+Suggested Results Text (Smart-seq3 vs NEBNext-thallus)
+
+To contextualize library performance, we compared gene detectability between low-input Smart-seq3 libraries (non-thallus lifecycle stages) and NEBNext libraries (thallus samples). Across TPM thresholds, Smart-seq3 libraries showed comparable-to-higher detectability (mean detected genes: TPM>0.1, 15,080 vs 14,057; TPM>1, 12,410 vs 11,173; TPM>3, 10,569 vs 9,824; Smart-seq3 vs NEBNext-thallus, respectively). These data indicate that the Smart-seq3 strategy provides robust transcriptome sensitivity while enabling profiling of low-abundance, stage-specific tissues that are difficult to isolate at high input.
+
+Because the compared sample sets represent different biological material (non-thallus vs thallus), this analysis is interpreted as a practical benchmarking comparison rather than a strictly controlled kit-only effect estimate.
+
+
+Suggested Figure Legend Text
+
+Figure X. Detectability comparison between Smart-seq3 low-input libraries and NEBNext thallus libraries. (A) Number of detected genes per sample at TPM thresholds (>0.1, >1, >3). (B) Detectability drop-off curves across increasing TPM thresholds (mean +/- SD within library type). (C) Expression-floor comparison using per-sample median TPM among detected genes (TPM>0). Smart-seq3 libraries show comparable or higher detectability while supporting transcriptome profiling of low-abundance lifecycle tissues. Because library types are compared across different biological sample classes, values are presented as descriptive benchmarking rather than a strict chemistry-only effect.
+
+
+Source Files Used For Values
+
+- results/tables/smartseq3_vs_nebnext_detectability_summary.tsv
+- results/figures/smartseq3_vs_nebnext_detectability_boxplot.pdf
+- results/figures/smartseq3_vs_nebnext_detectability_curves.pdf
+- results/figures/smartseq3_vs_nebnext_expression_floor_boxplot.pdf

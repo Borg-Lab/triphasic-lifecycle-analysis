@@ -1,6 +1,6 @@
-# Manuscript Code: Regulatory evolution and architecture of the triphasic life cycle in the red seaweed *Bostrychia moritziana*  
+# Manuscript Code: Regulatory evolution and architecture of the triphasic life cycle in the red alga *Bostrychia moritziana*  
 
-This repository contains the code used for transcriptomic analysis across the triphasic life history of the model red alga Bostrychia moritziana, as published here: paper ref
+This repository contains the code used for transcriptomic analysis of the triphasic life history of the model red alga Bostrychia moritziana, as published here: paper ref
 
 ## Repository Structure
 
@@ -40,7 +40,7 @@ The current `config/paths.yml` uses repository-relative placeholder paths for up
 
 This manuscript analysis uses raw STAR/Salmon outputs from the RNA-seq processing pipeline `nf-core/rnaseq` 3.12.0 and Nextflow 23.10.0.
 
-Runtime dependencies, R/Bioconductor package requirements, ASE shell-tool requirements, and the exact upstream input paths are documented in `docs/dependencies_and_provenance.md`.
+Runtime dependencies, R/Bioconductor package requirements, ASE shell tool requirements, and the exact upstream input paths are documented in `docs/dependencies_and_provenance.md`.
 
 ## Reproducibility Status
 

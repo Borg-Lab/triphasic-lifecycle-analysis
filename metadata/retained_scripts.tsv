@@ -1,4 +1,5 @@
 script	category
+scripts/00_report_environment.R	release_metadata
 scripts/01_validate_inputs.R	upstream_prerequisite
 scripts/02_prepare_expression_matrices.R	upstream_prerequisite
 scripts/03_run_differential_expression.R	upstream_prerequisite

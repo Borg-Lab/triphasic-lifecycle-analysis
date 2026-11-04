@@ -18,3 +18,4 @@ results_umi/
 *.gds
 *.vcf.gz
 *.tbi
+expression_browser/

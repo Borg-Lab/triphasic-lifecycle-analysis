@@ -1,10 +1,10 @@
 # Manuscript Code: Regulatory evolution and architecture of the triphasic life cycle in the red alga *Bostrychia moritziana*  
 
-This repository contains the code used for transcriptomic analysis of the triphasic life history of the model red alga *Bostrychia moritziana*. The full citation and DOI will be added when the manuscript is published.
+This repository contains the code used for transcriptomic analysis of the triphasic life history of the model red alga *Bostrychia moritziana*.
 
 ## Scope
 
-This repository is the code archive for the manuscript. It contains the retained analysis scripts, configuration files, and final figure and table outputs. The analysis starts from processed gene-level count and TPM matrices and associated annotation files; raw sequencing reads and other large primary data files are not duplicated here.
+This repository is the code archive for the manuscript. It contains analysis scripts, configuration files, and final figure and table outputs.
 
 ## Repository Structure
 
@@ -55,16 +55,6 @@ By default, generated results are written to `runs/triphasic_manuscript/results`
 ## Upstream Processing
 
 This manuscript analysis uses processed STAR/Salmon outputs from the RNA-seq processing pipeline `nf-core/rnaseq` 3.12.0 and Nextflow 23.10.0.
-
-To record the R version and installed versions of the packages used by the analysis:
-
-```bash
-scripts/run_rscript.sh scripts/00_report_environment.R docs/session_info.txt
-```
-
-## Data Availability
-
-The RNA-seq, genomic-read, and processed-expression accessions associated with this study should be cited from the final manuscript data-availability statement. The earlier genome project `PRJNA1219826` is related background data and is not the BioProject for the new manuscript datasets.
 
 ## License
 
